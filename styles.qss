@@ -1,0 +1,89 @@
+/* Основные стили */
+QMainWindow {
+    background-color: #f5f7fa;
+}
+
+QWidget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+
+QPushButton:disabled {
+    background-color: #BDBDBD;
+    color: #757575;
+}
+
+/* Список */
+QListWidget {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+QListWidget::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+QListWidget::item:hover {
+    background-color: #F5F5F5;
+}
+
+/* Текстовые поля */
+QLineEdit, QTextEdit {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: white;
+    selection-background-color: #2196F3;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #2196F3;
+}
+
+/* Разделитель */
+QSplitter::handle {
+    background-color: #ddd;
+    width: 4px;
+}
+
+QSplitter::handle:hover {
+    background-color: #2196F3;
+}
+
+/* Статус бар */
+QStatusBar {
+    background-color: #E0E0E0;
+    color: #616161;
+}
+
+/* Заголовки */
+QLabel[font-size="16px"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #424242;
+}
